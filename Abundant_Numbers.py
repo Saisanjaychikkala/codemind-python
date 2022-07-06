@@ -1,12 +1,9 @@
-def ab_num(num):
-    tot=0
-    for i in range(1,(num//2)+1):
-        if num%i==0:
-            tot+=i
-    if tot>num:
-        print(True)
-    else:
-        print(False)
-
-num=int(input())
-ab_num(num)
+n=int(input())
+s=0
+for i in range(1,(n//2)+4):
+    if n%i==0:
+        s+=i
+if(s>i):
+    print(True)
+else:
+    print(False)
