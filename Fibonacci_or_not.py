@@ -1,13 +1,16 @@
 n=int(input())
 a=0
 b=1
-for i in range(0,n+1):
+flag=0
+for i in range(n):
+    if a==n:
+        flag=1
+        break
     c=a+b
     a=b
     b=c
-    if a==n:
-        print(True)
-        break
+if flag==1:
+    print(True)
 else:
     print(False)
     
