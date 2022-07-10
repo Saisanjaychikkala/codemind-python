@@ -1,6 +1,7 @@
-num=int(input())
-sqr=int(num**0.5)
-if sqr*sqr==num:
-    print('True')
+import math
+n=int(input())
+m=math.sqrt(n)
+if m%int(m)==0:
+    print(True)
 else:
-    print('False')
+    print(False)
